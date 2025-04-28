@@ -85,6 +85,29 @@ class circularList{
         }
     }
 
+    void deleteatTail(){
+     
+        if(head==NULL){
+            return;
+        }
+        else if(head==tail){
+            delete head;
+        }
+        else{
+            Node*temp = tail;
+            Node*prev=head;
+            while(prev->next!=tail){
+                prev=prev->next;
+            }
+            tail=prev;
+            tail->next=head;
+            temp->next=NULL;
+            delete temp;
+        }
+      
+    }
+    
+
    
 };
 
