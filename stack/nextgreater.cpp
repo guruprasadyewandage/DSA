@@ -1,3 +1,5 @@
+//next greater element concept
+
 #include<iostream>
 #include<vector>
 #include<stack>
